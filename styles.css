@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: #ededed;
+  color: #333;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+.settings {
+  display: flex;
+
+  justify-content: space-evenly;
+  align-items: center;
+
+  width: 80%;
+}
+
+#color-picker {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  height: 500px;
+  width: 500px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  background-color: white;
+}
