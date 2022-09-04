@@ -21,16 +21,33 @@
     </header>
 
     <main>
-      <div class="grid"></div>
-
-      <div class="settings">
-        <input id="color-picker" type="color" value="#333333" />
+      <div class="settings-left">
+        <input id="color-picker" type="color" value="#ededed" />
         <button>Default</button>
         <button>Rainbow Mode</button>
         <button>Eraser</button>
         <button>Clear</button>
         <label for="grid-slider">16 x 16</label>
         <input id="grid-slider" type="range" value="16" min="16" max="64" />
+      </div>
+
+      <div class="grid"></div>
+
+      <div class="settings">
+        <input id="color-picker" type="color" value="#ededed" />
+        <button>Default</button>
+        <button>Rainbow Mode</button>
+        <button>Eraser</button>
+        <button>Clear</button>
+        <output id="slider-label"></output>
+        <input
+          id="grid-slider"
+          type="range"
+          value="oninput"
+          min="1"
+          max="64"
+          step="1"
+        />
       </div>
     </main>
   </body>
